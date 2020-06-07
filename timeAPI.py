@@ -1,3 +1,4 @@
+#Unused file. Tried to use this API initially but it was restricted. 
 import requests
 
 def getTime(city):
