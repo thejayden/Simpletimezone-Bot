@@ -1,0 +1,81 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - find_timezone
+  - find_timezone_with_location
+  - city_info
+  - continent_info
+  - thanks
+  - find_cities
+
+actions:
+  - action_show_timezone
+  - action_show_zones
+  - action_show_cities
+  - action_show_all
+
+entities:
+  - city
+  - continent
+
+slots:
+  city:
+    type: text
+    auto_fill: True
+  
+  continent:
+    type: text
+    auto_fill: True
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Sorry to hear that. Here, have a cute face, (づ｡◕‿‿◕｡)づ"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_sorry:
+  - text: "I'm sorry that didn't help. That is not my purpose afterall."
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a timezonebot, powered by Rasa. I will help you find the time of different cities."
+
+  utter_show_zones:
+  - text: "Here is a list of available zones/continents:"
+
+  utter_list_cities:
+  - text: "Here is a list of available cities:"
+
+  utter_ask_continent:
+  - text: "Okay before you tell me which city's time you want to find, could you tell me which zone/continent is the city in?"
+
+  utter_ask_continent_short:
+  - text: "Okay great, could you tell me which zone/continent is {city} in first?"
+  
+  utter_ask_location:
+  - text: "Great. Which city is this?"
+
+  utter_finding_timezone:
+  - text: "Ok, finding timezone of {city}..."
+
+  utter_you_are_welcome:
+  - text: "You are welcome! :)"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
