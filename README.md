@@ -1,8 +1,8 @@
 ![Alt Text](https://github.com/thejayden/Simpletimezone-Bot/blob/master/demo_gif.gif)
 <br><sub> *View a smoother video version in ["demo_full.mp4"](https://github.com/thejayden/Simpletimezone-Bot/raw/master/demo_full.mp4) (download vid)* </sub>
 
-## Simpletimezone-Bot
-A chatbot made with rasa which tells the user the time in different cities. It retrieves information through API and returns the required information.
+## Simpletimezonebot
+A chatbot which tells the user the time in different cities. It retrieves information through API and returns the required information. Made with Rasa and integrated with facebook messenger.
 <br>
 ### File Breakdown
 ***
